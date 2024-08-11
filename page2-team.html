@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* max-width: 786px; */
+}
+
+body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+    header{
+    background-color:#7843e9;
+    color: white;
+    position: fixed;
+    padding: 0 20px ;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* navbar */
+.navbar ul{
+    display: flex;
+    height: 70px;
+    max-width: 400px;
+    align-items: center;
+}
+.navbar ul li{
+    list-style-type: none;
+    padding: 20px;
+    font-weight: 200;
+    font-size: 14px;
+}
+.navbar a {
+    color: white;
+}
+/* additional feature */
+#no-decoration a{
+    text-decoration: none;
+}
+
+
+/* adding hover properties */
+
+.logo p:hover {
+    text-decoration: wavy white;
+    font-size: 17px;
+}
+
+
+.navbar li:hover {
+    font-size: 17px;
+}
+
+.navbar li:hover a {
+    color: #00080c;
+    text-decoration: underline;
+}
+.navbar button{ 
+    position: relative;
+    left: 110%;
+}
+
+.main{
+    padding-top: 100px;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.container{
+        /* border: 1px solid black;  */
+        width:100% ;
+        height: 500px;
+        padding-top: 100px;
+        /* background-color: #b9a8df; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+.about{
+    width: 300px;
+    /* height: 450px; */
+    /* background-color: wheat; */
+}
+.about img{
+    /* background-color: #b9a8df; */
+    /* height:300px ; */
+    width: 300px;
+    border-radius: 50%;
+}
+#name{
+    text-align: center;
+    padding: 12px;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.about p{
+    text-align: center;
+    font-size: 16px;
+}
+.links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 0;
+}
+</style>
+<body>
+    <header id="no-decoration">
+        <div class="navbar">
+            <ul id="no-decoration">
+                <li><a href="index98.html">HOME</a></li>
+                <li><a href="team.html">TEAMATES</a></li>
+                <button id="btn"> Dark Mode</button>
+            </ul>
+        </div>
+    </header>
+    <h1 class="main">my team</h1>
+    <div class="container">
+        <div class="about">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ51LlmfWrYtKXyASAzeq6Ih-mO_N6dvk7cWg&s" alt="images">
+            <p id="name">Ankit Singh Rawat</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus nihil et pariatur, labore omnis officia facere amet iure ducimus sunt in aliquam magni, ipsam quis voluptatem quidem unde recusandae perferendis!</p>
+            <div class="links">
+                <a>L</a>
+                <a>I</a>
+                <a>G</a>
+            </div>
+        </div>
+
+        <div class="about">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ51LlmfWrYtKXyASAzeq6Ih-mO_N6dvk7cWg&s" alt="images">
+            <p id="name">karan Singh bisht</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus nihil et pariatur, labore omnis officia facere amet iure ducimus sunt in aliquam magni, ipsam quis voluptatem quidem unde recusandae perferendis!</p>
+            <div class="links">
+                <a>L</a>
+                <a>I</a>
+                <a>G</a>
+            </div>
+            
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

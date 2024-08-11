@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style05.css">
+    <script src="https://kit.fontawesome.com/908b3ea18e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="https://w7.pngwing.com/pngs/315/386/png-transparent-music-dj-mix-song-mp3-color-notes-color-splash-album-color-pencil.png" class="song-img">
+            <h1>Despacito</h1>
+            <p>luis Fonsi ft. Puerto Rican</p>
+
+            <audio controls id="song">
+                <source src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Sevish_-__nbsp_.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div><i class="fa-solid fa-backward-step"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                <div><i class="fa-solid fa-forward-step"></i></div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="app05.js"></script>
+</body>
+</html>
